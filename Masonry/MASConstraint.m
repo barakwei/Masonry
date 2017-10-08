@@ -92,6 +92,13 @@
     };
 }
 
+- (MASConstraint * (^)(CGFloat))inset {
+    return ^id(CGFloat inset){
+        self.inset = inset;
+        return self;
+    };
+}
+
 - (MASConstraint * (^)(CGSize))sizeOffset {
     return ^id(CGSize offset) {
         self.sizeOffset = offset;
@@ -208,16 +215,12 @@
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeBaseline];
 }
 
-#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)
-
 - (MASConstraint *)firstBaseline {
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeFirstBaseline];
 }
 - (MASConstraint *)lastBaseline {
     return [self addConstraintWithLayoutAttribute:NSLayoutAttributeLastBaseline];
 }
-
-#endif
 
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
@@ -268,6 +271,8 @@
 - (MASConstraint * (^)(id key))key { MASMethodNotImplemented(); }
 
 - (void)setInsets:(MASEdgeInsets __unused)insets { MASMethodNotImplemented(); }
+
+- (void)setInset:(CGFloat __unused)inset { MASMethodNotImplemented(); }
 
 - (void)setSizeOffset:(CGSize __unused)sizeOffset { MASMethodNotImplemented(); }
 
