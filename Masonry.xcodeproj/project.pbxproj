@@ -61,7 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AED05B71AD59FD40053CC65 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AED05B71AD59FD40053CC65 /* Masonry-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Masonry-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AED05BB1AD59FD40053CC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AED05BC1AD59FD40053CC65 /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
 		3AED05DC1AD5A0470053CC65 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		3AED05B81AD59FD40053CC65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AED05B71AD59FD40053CC65 /* Masonry.framework */,
+				3AED05B71AD59FD40053CC65 /* Masonry-iOS.framework */,
 				3AED06271AD5A1400053CC65 /* Masonry.framework */,
 			);
 			name = Products;
@@ -243,7 +243,7 @@
 			);
 			name = "Masonry iOS";
 			productName = Masonry;
-			productReference = 3AED05B71AD59FD40053CC65 /* Masonry.framework */;
+			productReference = 3AED05B71AD59FD40053CC65 /* Masonry-iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3AED06081AD5A1400053CC65 /* Masonry OSX */ = {
@@ -476,7 +476,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Masonry;
+				PRODUCT_NAME = "Masonry-iOS";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -494,7 +494,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Masonry;
+				PRODUCT_NAME = "Masonry-iOS";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
