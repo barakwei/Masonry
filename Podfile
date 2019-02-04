@@ -9,12 +9,12 @@ end
 
 target 'Masonry iOS Tests' do
   project 'Tests/Masonry Tests'
+  pod 'Masonry', :path => './'
   pod 'Expecta'
 end
 
 target 'MasonryTestsLoader' do
   project 'Tests/Masonry Tests'
-  pod 'Masonry', :path => './'
 end
 
 # add settings needed to generate test coverage data
